@@ -1,0 +1,147 @@
+main {
+    min-height: 100vh;
+
+    .container {
+        width: 735px;
+        min-height: 511px;
+        border-radius: 30px;
+        // background-color: $White;
+        box-shadow: 0px 0px 20px 0px $Container-shadow;
+        ;
+
+        &__result {
+            min-width: 50%;
+            max-height: 100%;
+            background: $bg-gradient;
+            border-radius: 30px;
+            text-align: center;
+
+            &__inner-result {
+                max-width: 80%;
+                margin: 2.75rem auto; //44px
+
+                h1 {
+                    color: $Light-lavender;
+                    font-size: $fs-md;
+                    margin-bottom: 2.625rem; // 42px;
+                }
+
+                .percentage {
+                    margin: 0 auto;
+                    max-width: 200px;
+                    aspect-ratio: 1/1;
+                    border-radius: 50%;
+                    background: $bg-circle;
+                    color: $Light-lavender;
+                    font-size: $fs-sm;
+                    font-weight: $fw-md;
+
+                    span {
+                        display: block;
+                        font-size: $fs-xxl;
+                        font-weight: $fw-lg;
+                        color: $White;
+                    }
+                }
+
+                h2 {
+                    color: $White;
+                    font-size: $fs-lg;
+                    margin: 1.8125rem 0; // 29px 0;
+                }
+
+                p {
+                    max-width: 80%;
+                    margin: 0 auto;
+                    color: $Light-lavender;
+                }
+            }
+        }
+
+        &__summary {
+            min-width: 50%;
+            max-height: 50%;
+
+            &__inner-summary {
+                max-width: 80%;
+                margin: 2.75rem auto; //44px
+
+                h1 {
+                    color: $Dark-gray-blue;
+                }
+
+                h2 {
+                    color: $Light-red;
+                    font-weight: $fw-sm;
+                    font-size: $fs-md;
+                }
+
+                .scroes {
+                    margin: 2.5rem 0;
+
+                    .score {
+                        font-weight: $fw-md;
+                        padding: 22px;
+                        border-radius: 10px;
+                        color: $Light-Dark-gray-blue;
+
+                        span {
+                            color: $Dark-gray-blue;
+                        }
+                    }
+
+                    >:first-child {
+                        background-color: $Very-Light-red;
+
+                        h2 {
+                            color: $Light-red;
+                        }
+                    }
+
+                    >:nth-child(2) {
+                        background-color: $Light-Orangey-yellow;
+
+                        h2 {
+                            color: $Orangey-yellow;
+                        }
+                    }
+
+                    >:nth-child(3) {
+                        background-color: $Light-Green-teal;
+
+                        h2 {
+                            color: $Green-teal;
+                        }
+                    }
+
+                    >:nth-child(4) {
+                        background-color: $Light-Cobalt-blue;
+
+                        h2 {
+                            color: $Cobalt-blue;
+                        }
+                    }
+                }
+
+
+                button {
+                    outline: none;
+                    border: none;
+                    width: 100%;
+                    padding: 1rem;
+                    background-color: $Dark-gray-blue;
+                    color: $White;
+                    font-weight: $fw-md;
+                    font-size: $fs-sm;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: background 0.3s ease-in;
+
+                    &:hover {
+                        background: $bg-gradient;
+                    }
+                }
+            }
+        }
+    }
+}

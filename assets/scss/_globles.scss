@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+// ### Primary
+
+$Light-red: hsl(0, 100%, 67%);
+$Very-Light-red: hsla(0, 100%, 67%, 0.1);
+
+$Orangey-yellow: hsl(39, 100%, 56%);
+$Light-Orangey-yellow: hsla(39, 100%, 56%, 0.1);
+
+$Green-teal: hsl(166, 100%, 37%);
+$Light-Green-teal: hsla(166, 100%, 37%, 0.1);
+
+$Cobalt-blue: hsl(234, 85%, 45%);
+$Light-Cobalt-blue: hsla(234, 85%, 45%, .1);
+
+// ### Gradients
+
+$Light-slate-blue: hsl(252, 100%, 67%); //(background)
+$Light-royal-blue: hsl(241, 81%, 54%);
+
+$Violet-blue : hsla(256, 72%, 46%, 1); //(circle)
+$Persian-blue : hsla(241, 72%, 46%, 0);
+
+$bg-gradient: linear-gradient($Light-slate-blue, $Light-royal-blue);
+$bg-circle: linear-gradient($Violet-blue, $Persian-blue);
+
+// ### Neutral
+
+$White: hsl(0, 0%, 100%);
+$Pale-blue: hsl(221, 100%, 96%);
+$Light-lavender: hsl(241, 100%, 89%);
+$Dark-gray-blue: hsl(224, 30%, 27%);
+$Light-Dark-gray-blue: hsla(224, 30%, 27%, 0.42);
+$Container-shadow: hsla(224, 30%, 27%, 0.09);
+
+// Font sizes
+
+$fs-xxl: 51px;
+$fs-xl: 39px;
+$fs-lg: 23px;
+$fs-md: 18px;
+$fs-sm: 13px;
+$fs-ex-sm: 11px;
+
+$fw-lg: 800;
+$fw-md: 700;
+$fw-sm: 500;
+
+
+*::after,
+*,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', system-ui;
+}
+
+body {
+    background-color: $White;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-f {
+    display: flex;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.jc-c {
+    justify-content: center;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.fd-c {
+    flex-direction: column;
+}
+
+.g-p {
+    gap: 10px;
+}
+
+.G-P {
+    gap: 15px;
+}
+
+.b {
+    border: 1px solid red;
+}
